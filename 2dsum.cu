@@ -32,4 +32,7 @@ int main(){
 		sum += c[i];
 	}
 	printf("%d\n",sum);
+	
+	cudaFree(dev_a); cudaFree(dev_c);
+	return 0;
 }
